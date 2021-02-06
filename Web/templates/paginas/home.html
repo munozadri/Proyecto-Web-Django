@@ -1,0 +1,96 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+{% block title  %} Home {% endblock %}
+
+{% block content  %}
+ 
+<section class="slogan">
+            <p>"Desarrolle sistemas inteligentes, integre todas las fuentes de 
+            información de su empresa, analice y tome decisiones con las principales herramientas de 
+            Reporting y Analitica del mercado"</p>
+        </section>
+     
+        <section class="portafolio">
+            <h1>TENDENCIAS</h1>
+            <div class="portafolio-container">
+                <section class="portafolio-item">
+                    <img src="{% static 'imagen/f1.png' %}"class="portafolio-img"/>
+                    <section class="portafolio-text">
+                        <h2>Data Science</h2>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                         It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </section>
+                </section>
+                <section class="portafolio-item">
+                    <img src="{% static 'imagen/f2.png' %}"class="portafolio-img"/>
+                    <section class="portafolio-text">
+                        <h2>Big Data</h2>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </section>
+                </section>
+                <section class="portafolio-item">
+                    <img src="{% static 'imagen/f3.png' %}"class="portafolio-img"/>
+                    <section class="portafolio-text">
+                        <h2>Data Visualization</h2>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </section>
+                </section>
+
+            </div>
+
+        </section>
+
+        <section class="content-bloque">
+            <div class="bloque">
+                <h1>¿Por qué migrar al BIG DATA?</h1>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some 
+                    form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
+                    passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the
+                    Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true 
+                    generator on the Internet. It uses a dictionary of over 200 Latin words.
+                </p>
+            </div>
+            <div class="bloque2">
+                <h1>Consultoría BIG DATA</h1>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some 
+                    form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a 
+                    passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the
+                    Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true 
+                    generator on the Internet. It uses a dictionary of over 200 Latin words.
+                </p>
+            </div>
+        </section>
+   
+        <section class="portadamedia">
+            <div class="capa-gradient">
+                <div class="info">
+                    <h1>DataConsulting</h1>
+                    <p>Descubrimos tu universo de datos y el poder para transformarlos en tecnología inteligente. Mediante 
+                    la consultoría Big Data tratamos y analizamos aportando valor real al dato para la toma de decisiones y 
+                    transformación digital en empresas. </p>
+                    <button>Ver más...</button>
+                </div>
+            </div>           
+        </section>
+
+        <section class="redes">
+            <div class="inforedes">
+                <h1>Redes Sociales</h1>
+            </div>
+            <div class="logotipos">
+                <img src="{% static 'imagen/instagram.png' %}"class="logotipos-img"/>
+                <img src="{% static 'imagen/facebook.png' %}"class="logotipos-img"/>
+                <img src="{% static 'imagen/linkedin.png' %}"class="logotipos-img"/>
+                <img src="{% static 'imagen/twitter.png' %}"class="logotipos-img"/>
+            </div>
+           </div>
+        </section>
+
+
+{% endblock %}

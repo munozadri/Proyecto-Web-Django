@@ -1,0 +1,65 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+{% block title  %} Login {% endblock %}
+
+{% block content  %}
+    
+    <div class="login">
+        <h1>Iniciar Sesión</h1>
+            <p>
+                <input class="sesion" type="submit" value="Iniciar Sesión">
+            </p>
+        
+        <h3>Si no tenés una cuenta, podés registrarte gratuitamente en pocos pasos...</h3>
+     
+    </div>
+    <section class="login-container">
+
+        <h2>Registrate Acá </h2>
+
+        <form>
+            <p>
+				<label class="" for="Nombre"><strong>Nombre</strong></label> <br/>
+				<input  type="text" name="Nombre" placeholder="Ingrese nombre" />
+			</p>
+            <p>
+				<label class="" for="Apellido"><strong>Apellido</strong></label> <br/>
+				<input  type="text" name="Apellido" placeholder="Ingrese apellido" />
+			</p>
+            <p>
+				<label class="" for="Email"><strong>Email</strong></label> <br/>
+				<input  type="text" name="Email" placeholder="Ingrese email" />
+			</p>
+            <p>
+				<label class="" for="Contraseña"><strong>Contraseña</strong></label> <br/>
+				<input  type="text" name="Contraseña" placeholder=" Ingrese contraseña"/>
+			</p>
+              <p>
+                <input class="sesion" type="submit" value="Registrarse">
+            </p>
+        </form>
+    
+    </section>
+
+    <div class="msj">
+        <h2>Nota: Se enviará un correo a la dirección de correo proporcionada por ud. para validar el registro.</h2>
+    </div>
+    
+    <section class="msj1">
+        <h1>Resultados Inteligentes: Haz que los datos empiecen ahora a trabajar para tu empresa</h1>
+        <p>En un mundo donde la información se ha vuelto uno de los principales capitales, organizar el funcionamiento en
+         base a los datos recibidos es crear un valor añadido a nuestra marca o producto. Podemos ayudarte como consultoría 
+         de Big Data y aportando soluciones de infraestructura para el manejo de datos y la optimización de recursos.
+        </p>
+
+        <div class="msjimg">
+                   
+        </div>
+
+        
+
+    </section>
+   
+{% endblock %}

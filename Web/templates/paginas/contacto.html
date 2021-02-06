@@ -1,0 +1,107 @@
+{% extends 'layout/layout.html' %}
+
+
+{% block title  %} Contacto {% endblock %}
+
+{% block content  %}
+	
+	<div class="encabezado"> 
+		<h1>Comunicate con Nosotros</h1>
+	</div>
+
+ 	<section class="encabezadoalto">
+        <div class="capa-gradient2">
+            <div class="info2">
+				<p> Completá el formulario y estaremos en contacto para analizar los datos de tu organización y 
+				transformarlos en decisiones inteligentes
+				</p>
+            </div>
+        </div>           
+    </section>
+
+		<div class="formulario">    
+			<h1>Formulario de Contacto</h1>
+		</div>
+		
+		{% if messages %}
+			{% for message in messages%}
+			<div class="message">
+				{{message}}
+			{% endfor %}
+			</div>
+		{% endif%}
+
+		<div class="ubicanos">
+			<h2>También podés ubicarnos...</h2>
+				<p><strong>Dirección:</strong> 25 de Mayo ABC piso X</p>
+				
+				<p><strong>Teléfono:</strong> 54 11 000 0000</p>
+				<p><strong>Email:</strong> dataconsulting@consulting.com.ar</p>
+				
+		</div>
+
+		<section class="form-container">
+			<form class="form" action="{% url 'save' %}"  method="POST">
+				
+				{% csrf_token %}
+				<p>
+					<label class="label" for="Nombre"><strong>Nombre</strong></label> <br/>
+					<input  type="text" name="Nombre" placeholder="Ingrese nombre" />
+				</p>
+				<p>
+					<label class="label" for="Apellido"><strong>Apellido</strong></label> <br/>
+					<input type="text" name="Apellido" placeholder="Ingrese apellido"/>
+				</p>
+				<p>
+					<label class="label" for="DNI"><strong>DNI</strong></label> <br/>
+					<input type="text" name="DNI" placeholder="Ingrese DNI"/>
+				</p>
+				<p>
+					<label class="label" for="Nacionalidad"><strong>Nacionalidad</strong></label> <br/>
+					<select name="Nacionalidad">
+						<option value="0"> Nacional </option>
+						<option value="1"> Extrajero </option>
+						
+					</select> 
+				</p>
+				<p> 
+				<label class="label" for="Edad"><strong>Edad</strong></label>	
+				<select name="Edad">
+					<option value="0">Mayor de Edad</option>	
+					<option value="1">Adulto</option>
+				</select>
+				</p>
+				<p>
+					<label class="label" for="Telefono"><strong>Teléfono</strong></label> <br/>
+					<input type="text" name="Telefono" placeholder="Ingrese telefono"/>
+				</p>
+				<p>
+					<label class="label" for="Email"><strong>Email</strong></label> <br/>
+					<input type="text" name="Email" placeholder="Ingrese email"/>
+				</p>
+				<p>
+					<label class="label" for="Empresa"><strong>Nombre de Empresa</strong></label> <br/>
+					<input type="text" name="Empresa" placeholder="Ingrese empresa"/>
+				</p>
+				<p>
+					<label class="label" for="Consulta"><strong>Motivo de Consulta</strong></label> <br/>
+					<select name="Consulta">
+						<option value="0">Big Data</option>	
+						<option value="1">Data Science</option>
+						<option value="2">Data Analytics</option>
+					</select>
+									
+				</p>
+				
+				<p> 
+					<label class="label" for="Comentarios"><strong>Comentarios</strong></label> <br/>
+					<textarea class="comentarios" name="Comentarios"></textarea>
+				</p>
+
+				<p>
+					<input type="submit" value="Enviar Mensaje">
+				</p>
+			</form>
+		</section>
+	
+{% endblock %}

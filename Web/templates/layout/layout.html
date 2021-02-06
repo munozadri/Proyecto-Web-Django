@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>
+        {% block title %}
+        
+        {% endblock %}
+        | Consultora</title>
+    <meta charset="UTF-8" />
+    
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    <link rel="icon" type="image/x-icon" href="{% static 'imagen/unnamed.ico' %}">
+ 
+</head>
+
+<body>
+    <header>
+        <div id="logotipo">
+            <img src="{% static 'imagen/unnamed.png' %}"/>
+                <h1>DataConsulting | Research & Consultancy</h1>
+        </div>
+        <div class="menu">
+            <nav>      
+                <ul>
+                    <li>
+                        <a href="{% url 'login' %}">Login</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contacto' %}">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'publicaciones' %}">Publicaciones</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'faq' %}">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'productos' %}">Productos</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'nosotros' %}">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                </ul>
+                </nav> 
+            </div>  
+        </div>
+    </header>
+    
+    <div class="portada">
+        <div class="portada-detalles">
+        <p>“Data is the new science. Big Data are the answers”. Pat Gelsinger</p>
+        </div>
+    </div>
+
+    <section id="content">
+         {%block content%}
+            <!--Codigo que viene de un Templates-->
+            <strong>Contenido del Bloque Original</strong>      
+        {%endblock%}
+            
+    </section>
+    
+
+
+
+    <footer>
+        Consultora de Datos &copy; Muñoz - {% now "Y" %} <br>
+        Desarrollado por Adriana Muñoz
+    </footer>
+
+</body>
+
+</html>

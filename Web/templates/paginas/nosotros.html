@@ -1,0 +1,71 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+{% block title  %} Nosotros {% endblock %}
+
+{% block content  %}
+    <div class="slogan"> 
+        <p>Soluciones de Big Data: cambiando la forma de trabajar!!</p>
+        <p>El futuro de su negocio depende de los recursos de analítica y de datos que desarrolle y escale. Conozca 
+        la infraestructura de big data que proporciona nuevas oportunidades, ahorros y transformación. </p>
+    </div>
+
+    <section class="nosotros">
+        <h1>Misión</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+             type specimen book</p>
+        
+        <h1>Visión</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+             type specimen book</p>
+        
+        <h1>Objetivo</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+             type specimen book</p>
+
+        <h1>Estrategia y Valores</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+             type specimen book</p>
+             
+    </section>
+
+    <section class="talento">
+        <div class="title">
+            <h1>Talento Humano</h1>
+        </div>
+            <section class="talento-container">
+            <div class="talento-item">
+                <img src="{% static 'imagen/ejecutiva1.png' %}"class="talento-img"/>
+                <div class="talento-text">
+                    <h2>Carla Gonzalez</h2>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                </div>
+            </div>
+            <div class="talento-item">
+                <img src="{% static 'imagen/ejecutivo2.png' %}"class="talento-img"/>
+                <div class="talento-text">
+                    <h2>Mario Brunni</h2>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                </div>
+            </div>
+            <div class="talento-item">
+                <img src="{% static 'imagen/ejecutiva3.png' %}"class="talento-img"/>
+                <div class="talento-text">
+                    <h2>Sofía Torres</h2>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                </div>
+            </div>
+            </section>
+    </section>
+
+
+
+
+
+    
+{% endblock %}

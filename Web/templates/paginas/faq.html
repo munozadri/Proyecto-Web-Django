@@ -1,0 +1,82 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+{% block title  %} Preguntas Frecuentes {% endblock %}
+
+{% block content  %}
+
+    <section class="faq-container">
+        <div class="faq">
+            <h1>Preguntas Frecuentes</h1>
+        </div>
+        
+        <ul class="img">
+            <li class="imagen">
+                <img src="{% static 'imagen/img_fqa.png' %}"/>
+            </li>
+            <li class="imagen">
+                <img src="{% static 'imagen/img_fqa1.png' %}"/>
+            </li>
+            <li class="imagen">
+                <img src="{% static 'imagen/img_fqa2.png' %}"/>
+            </li>
+
+        </ul>
+
+        
+        <ul class="lista">
+            <!-- Pregunta 1 -->
+            <li class="pregunta">
+                <h2>¿Qué es BIG DATA?</h2>
+            </li>
+            <li class="respuesta">
+                <p>Es un término evolutivo que describe cualquier cantidad voluminosa de datos estructurados, semiestructurados y no estructurados que tienen el potencial de ser extraídos para obtener información.<p>
+            </li>
+            <!-- Pregunta 2 -->
+            <li class="pregunta">
+                <h2>¿Para qué sirve el BIG DATA?</h2>
+            </li>
+            <li class="respuesta">
+                <p>Marketing y ventas son quizá las áreas de mayor aplicación de big data en la actualidad. Los datos se utilizan para comprender mejor a los clientes, sus comportamientos y preferencias.</p>
+            </li>
+            <!-- Pregunta 3 -->
+            <li class="pregunta">
+                <h2>¿Beneficios del BIG DATA?</h2>
+            </li>
+            <li class="respuesta">
+                <p>La extracción y análisis de datos ayuda a determinar el comportamiento de los clientes, y a fijar precios en consecuencia. Como resultado, el Big Data permite, por ejemplo, actualizar, optimizar y afinar inventarios en función de la demanda en tiempo real.</p>
+            </li>
+            <!-- Pregunta 4 -->
+            <li class="pregunta">
+                <h2>¿Data Science?</h2>
+            </li>
+            <li class="respuesta">
+                <p>El Científico de Datos o Data Scientist es un perfil profesional que traduce los grandes volúmenes de información disponibles conocidos como Big Data. Provienen de todo tipo de fuentes de información masivas y las convierten en respuestas.</p>
+            </li>
+            <!-- Pregunta 5 -->
+            <li class="pregunta">
+                <h2>¿Qué es una Data Analytics?</h2>
+            </li>
+            <li class="respuesta">
+                <p>Data analytics (análisis de datos) es un enfoque que implica el análisis de datos (big data, en particular) para sacar conclusiones. Al usar data analytics, las empresas pueden estar mejor equipadas para tomar decisiones estratégicas y aumentar su volumen de negocios.</p>
+            </li>
+            <!-- Pregunta 6 -->
+            <li class="pregunta">
+                <h2>¿Data Visualization?</h2>
+            </li>
+            <li class="respuesta">
+                <p>La visualización de datos es el proceso de búsqueda, interpretación, contraste y comparación de datos que permite un conocimiento en profundidad y detalle de los mismos de tal forma que se transformen en información comprensible para el usuario.</p>
+            </li>
+
+        </ul>
+
+    </section>
+
+    
+
+
+
+
+
+{% endblock %}

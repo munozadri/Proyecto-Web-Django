@@ -1,0 +1,79 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+{% block title  %} Productos {% endblock %}
+
+{% block content  %}
+    
+    <div class="tituloproduct">
+        <h1>Servicios y Producto</h1>
+    </div>
+    
+   <section class="productos">
+            <div class="productos-container">
+                <section class="productos-item">
+                    <img src="{% static 'imagen/producto1.jpg' %}"class="productos-img"/>
+                    <section class="productos-text">
+                        <h2>Data Science</h2>
+                        <p>Complemente sus sistemas integrando soluciones de analítica avanzada con prácticas de Inteligencia Artificial 
+                        como machine learning, procesamiento de lenguaje natural y reconocimiento de objetos.​.</p>
+                    </section>
+                </section>
+                <section class="productos-item">
+                    <img src="{% static 'imagen/producto2.jpg' %}"class="productos-img"/>
+                    <section class="productos-text">
+                        <h2>Big Data</h2>
+                        <p>Descubra el valor de los datos estructurados y no estructurados y la velocidad que le pueden otorgar a su negocio. 
+                        Vuelva inteligible la información no procesada por procesos tradicionales. Logre utilizar datos en gran volumen y 
+                        variedad, mediante aplicaciones que respondan con la velocidad necesaria para brindar la información correcta en el
+                         momento preciso.</p>
+                    </section>
+                </section>
+                <section class="productos-item">
+                    <img src="{% static 'imagen/producto3.jpg' %}"class="productos-img"/>
+                    <section class="productos-text">
+                        <h2>Data Visualization</h2>
+                        <p>Obtenga conocimiento acerca del nivel de calidad de datos de sus aplicaciones y procesos y defina reglas de 
+                        mejora de datos que permitan aumentar la confianza y calidad de este activo tan importante para las empresas.​</p>
+                    </section>
+                </section>
+            </div>
+    </section>
+
+     <section class="productos">
+            <div class="productos-container">
+                <section class="productos-item">
+                    <img src="{% static 'imagen/integraciondatos.jpg' %}"class="productos-img"/>
+                    <section class="productos-text">
+                        <h2>Integración e Inyección de Datos</h2>
+                        <p>Tratamos, unificamos e integramos los diferentes sistemas de la organización para facilitar una visión conjunta
+                        del negocio, sin barreras técnicas y/o tecnológicas. Para ello se modelan y construyen sistemas basados en
+                        Datawarehousing o en Datalakes, dependiendo las necesidades analíticas de su organización.</p>
+                    </section>
+                </section>
+                <section class="productos-item">
+                    <img src="{% static 'imagen/DataW.jpg' %}"class="productos-img"/>
+                    <section class="productos-text">
+                        <h2>Data Warehousing</h2>
+                        <p>Nuestro objetivo es lograr que su empresa consiga sacar el máximo partido a todas las fuentes de información de 
+                        forma sencilla, escalable y rentable. Podemos ofrecerle una solución de Data Warehouse personalizada y adaptada 
+                        exactamente a sus necesidades y con el mejor rendimiento posible para todo funcione de forma ágil y sin problemas.</p>
+                    </section>
+                </section>
+                <section class="productos-item">
+                    <img src="{% static 'imagen/BI.jpg' %}"class="productos-img"/>
+                    <section class="productos-text">
+                        <h2>Business Intelligence</h2>
+                        <p>Cuando hablamos de Business Intelligence nos referimos al uso de estrategias y herramientas que sirven para 
+                        transformar datos en bruto en información y conocimiento, con el objetivo de mejorar el proceso de toma de decisiones
+                        en una empresa para convertirlo en un negocio inteligente. Al fin y al cabo, se trata de optimizar el uso que las
+                        empresas hacen de sus datos y la información que poseen.​</p>
+                    </section>
+                </section>
+            </div>
+    </section>
+
+
+
+{% endblock %}
